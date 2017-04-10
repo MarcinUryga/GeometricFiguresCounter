@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">ProjektPodsumowujacy</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="title_activity_pole_kwadratu">PoleKwadratuActivity</string>
+
+    <string name="pole_kwadratu">Pole kwadratu</string>
+    <string name="pole_prostokata">Pole prostokąta</string>
+    <string name="pole_kola">Pole koła</string>
+    <string name="pole_rombu">Pole rombu</string>
+    <string name="pole_trojkata_prostokatneo">Pole trójkąta prostokątnego</string>
+    <string name="pole_trojkata_rownobocznego">Pole trójkąta równobocznego</string>
+
+    <string name="wymiary_podstawy">Podaj długość podstawy</string>
+    <string name="wymiary_promienia">Podaj długość promienia</string>
+    <string name="wymiary_wysokosci">Podaj wysokość</string>
+    <string name="wymiary_przekatnej">Podaj długość przekątnej</string>
+    <string name="wymiary_drugiej_przekatnej">Podaj długość 2 przekątnej</string>
+
+    <string name="countButtonString">Oblicz</string>
+    <string name="resultDescriptionView">Pole wynosi:</string>
+
+
+</resources>
