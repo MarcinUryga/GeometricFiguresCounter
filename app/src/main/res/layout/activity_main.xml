@@ -1,130 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
+<RelativeLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TableRow>
+   <FrameLayout
+       android:id="@+id/containerForFragments"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   </FrameLayout>
 
-        <ImageView
-            android:id="@+id/kwadratImg"
-            android:src="@drawable/kwadrat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:id="@+id/kwadratView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pole_kwadratu"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:textSize="20dp"
-            android:onClick="SquareIntent"/>
-
-
-    </TableRow>
-
-    <TableRow>
-
-        <ImageView
-            android:id="@+id/prostokatImg"
-            android:src="@drawable/prostokat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:id="@+id/prostkatView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pole_prostokata"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:textSize="20dp"
-            android:onClick="RectangleIntent"/>
-
-    </TableRow>
-
-    <TableRow>
-
-        <ImageView
-            android:id="@+id/koloImg"
-            android:src="@drawable/kolo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:id="@+id/koloView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pole_kola"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:textSize="20dp"
-            android:onClick="CircleIntent"
-            />
-
-    </TableRow>
-
-    <TableRow>
-
-        <ImageView
-            android:id="@+id/rombImg"
-            android:src="@drawable/romb"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:id="@+id/rombView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pole_rombu"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:textSize="20dp"
-            android:onClick="DiamondIntent"/>
-
-    </TableRow>
-
-    <TableRow>
-
-        <ImageView
-            android:id="@+id/trprImg"
-            android:src="@drawable/trojkat"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:id="@+id/trprView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pole_trojkata_prostokatneo"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:textSize="20dp"
-            android:onClick="RightAngledTriangleIntent"/>
-
-    </TableRow>
-
-    <TableRow>
-
-        <ImageView
-            android:id="@+id/trrwImg"
-            android:src="@drawable/trojkat2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <TextView
-            android:id="@+id/trrwView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pole_trojkata_rownobocznego"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:textSize="20dp"
-            android:onClick="EquilateralTriangleIntent"/>
-
-    </TableRow>
-
-
-</TableLayout>
+</RelativeLayout>
