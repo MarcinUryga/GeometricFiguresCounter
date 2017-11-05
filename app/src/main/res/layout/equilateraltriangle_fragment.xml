@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/pole_trojkata_rownobocznego"
+        android:text="@string/equilateral_triangle_area"
         android:textAlignment="center"
-        android:textSize="30dp" />
+        android:textSize="30sp"/>
 
     <TextView
         android:id="@+id/triangleBaseView"
@@ -24,17 +24,18 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
-        android:text="@string/wymiary_podstawy" />
+        android:text="@string/specify_base"/>
 
     <EditText
-
         android:id="@+id/triangleBaseEditText"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/triangleBaseView"
         android:layout_alignStart="@+id/triangleBaseView"
         android:layout_below="@+id/triangleBaseView"
-        android:textAlignment="center" />
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        tools:ignore="LabelFor"/>
 
 
     <Button
@@ -44,7 +45,7 @@
         android:layout_below="@+id/triangleBaseEditText"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Oblicz" />
+        android:text="@string/count"/>
 
     <TextView
         android:id="@+id/resultDescriptionView"
@@ -53,18 +54,19 @@
         android:layout_alignEnd="@+id/countAreaBtn"
         android:layout_below="@+id/countAreaBtn"
         android:layout_marginTop="38dp"
-        android:text="@string/resultDescriptionView" />
+        android:text="@string/resultDescriptionView"/>
 
     <TextView
         android:id="@+id/resultTextView"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/resultDescriptionView"
         android:layout_centerHorizontal="true"
-        android:text=""
+        android:maxLength="10"
+        android:maxLines="1"
         android:textAlignment="center"
         android:textColor="@color/resultColor"
-        android:textSize="45dp" />
+        android:textSize="45sp"/>
 
 
 </RelativeLayout>

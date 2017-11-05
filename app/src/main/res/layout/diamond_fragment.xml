@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/pole_rombu"
-        android:textSize="30dp" />
+        android:text="@string/diamond_area"
+        android:textSize="30sp"/>
 
     <Button
         android:id="@+id/countAreaBtn"
@@ -23,7 +23,7 @@
         android:layout_below="@+id/firstDiagonalEditText"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Oblicz" />
+        android:text="@string/count"/>
 
     <TextView
         android:id="@+id/resultDescriptionView"
@@ -32,7 +32,7 @@
         android:layout_alignEnd="@+id/countAreaBtn"
         android:layout_below="@+id/countAreaBtn"
         android:layout_marginTop="38dp"
-        android:text="@string/resultDescriptionView" />
+        android:text="@string/resultDescriptionView"/>
 
     <TextView
         android:id="@+id/resultTextView"
@@ -41,10 +41,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/resultDescriptionView"
-        android:text=""
+        android:maxLength="10"
+        android:maxLines="1"
         android:textAlignment="center"
         android:textColor="@color/resultColor"
-        android:textSize="45dp" />
+        android:textSize="45sp"/>
 
     <TextView
         android:id="@+id/firstDiagonalTextView"
@@ -53,7 +54,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="60dp"
-        android:text="@string/wymiary_przekatnej" />
+        android:text="@string/specify_first_diagonal"/>
 
     <TextView
         android:id="@+id/secondDiagonalTextView"
@@ -61,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/firstDiagonalTextView"
-        android:text="@string/wymiary_drugiej_przekatnej" />
+        android:text="@string/specify_second_diagonal"/>
 
     <EditText
         android:id="@+id/firstDiagonalEditText"
@@ -70,7 +71,9 @@
         android:layout_alignEnd="@+id/firstDiagonalTextView"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/firstDiagonalTextView"
-        android:textAlignment="center" />
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        tools:ignore="LabelFor"/>
 
     <EditText
         android:id="@+id/secondDiagonalEditText"
@@ -79,8 +82,9 @@
         android:layout_alignEnd="@+id/secondDiagonalTextView"
         android:layout_alignStart="@+id/secondDiagonalTextView"
         android:layout_below="@+id/secondDiagonalTextView"
-        android:onClick="obliczPole"
-        android:textAlignment="center" />
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        tools:ignore="LabelFor"/>
 
 
 </RelativeLayout>

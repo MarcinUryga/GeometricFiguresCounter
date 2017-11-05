@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="squareID" type="id">0</item>
-    <item name="circleID" type="id">1</item>
-    <item name="diamondID" type="id">2</item>
-    <item name="equilateraltriangleID" type="id">3</item>
-    <item name="rectangulartriangleID" type="id">4</item>
+    <item name="squareId" type="id">0</item>
+    <item name="circleId" type="id">1</item>
+    <item name="diamondId" type="id">2</item>
+    <item name="equilateralTriangleId" type="id">3</item>
+    <item name="rectangularTriangleId" type="id">4</item>
     <item name="rectangleID" type="id">5</item>
 </resources>
